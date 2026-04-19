@@ -8,10 +8,10 @@
 </p>
 
 ## 🤖 Yui's Terminal
-```text
+text
 $ cat /var/log/yui_insight.log
 > [SYS_INIT] System core is online. Awaiting data stream...
-```
+
 
 ## 🚀 About Me
 - 🔭 Currently working on: 本地大模型部署与 AI Agent 架构重构
