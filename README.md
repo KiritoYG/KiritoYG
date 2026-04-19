@@ -19,18 +19,19 @@ JavaScript  [█████████░] 88.7%
 Python      [█░░░░░░░░░]  5.8%
 HTML        [░░░░░░░░░░]  4.3%
 CSS         [░░░░░░░░░░]  1.2%
+```
 
-📊 GitHub Stats
+## 📊 GitHub Stats
 <div align="center">
-<img src="https://github-readme-stats.vercel.app/api?username=KiritoYG&show_icons=true&theme=radical&hide_border=true" />
-<img src="https://github-readme-stats.vercel.app/api/top-langs/?username=KiritoYG&layout=compact&theme=radical&hide_border=true" />
+  <img src="[https://github-readme-stats.vercel.app/api?username=KiritoYG&show_icons=true&theme=radical&hide_border=true](https://github-readme-stats.vercel.app/api?username=KiritoYG&show_icons=true&theme=radical&hide_border=true)" />
+  <img src="[https://github-readme-stats.vercel.app/api/top-langs/?username=KiritoYG&layout=compact&theme=radical&hide_border=true](https://github-readme-stats.vercel.app/api/top-langs/?username=KiritoYG&layout=compact&theme=radical&hide_border=true)" />
 </div>
 
-🐍 Contribution Animation
+## 🐍 Contribution Animation
 <div align="center">
-<picture>
-<source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/KiritoYG/KiritoYG/output/github-contribution-grid-snake-dark.svg">
-<source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/KiritoYG/KiritoYG/output/github-contribution-grid-snake.svg">
-<img alt="github contribution grid snake animation" src="https://raw.githubusercontent.com/KiritoYG/KiritoYG/output/github-contribution-grid-snake.svg">
-</picture>
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="[https://raw.githubusercontent.com/KiritoYG/KiritoYG/output/github-contribution-grid-snake-dark.svg](https://raw.githubusercontent.com/KiritoYG/KiritoYG/output/github-contribution-grid-snake-dark.svg)">
+    <source media="(prefers-color-scheme: light)" srcset="[https://raw.githubusercontent.com/KiritoYG/KiritoYG/output/github-contribution-grid-snake.svg](https://raw.githubusercontent.com/KiritoYG/KiritoYG/output/github-contribution-grid-snake.svg)">
+    <img alt="github contribution grid snake animation" src="[https://raw.githubusercontent.com/KiritoYG/KiritoYG/output/github-contribution-grid-snake.svg](https://raw.githubusercontent.com/KiritoYG/KiritoYG/output/github-contribution-grid-snake.svg)">
+  </picture>
 </div>
