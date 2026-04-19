@@ -7,6 +7,12 @@
   <img src="https://spotify-readme-azure-one.vercel.app/api" alt="Spotify Now Playing" />
 </p>
 
+## 🤖 Yui's Terminal
+```text
+$ cat /var/log/yui_insight.log
+> [SYS_INIT] System core is online. Awaiting data stream...
+```
+
 ## 🚀 About Me
 - 🔭 Currently working on: 本地大模型部署与 AI Agent 架构重构
 - 🌱 Learning: Python 进阶与底层框架探索
