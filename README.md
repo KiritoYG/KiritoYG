@@ -4,7 +4,7 @@
 
 ## 🎧 Now Playing
 <p align="left">
-  <img src="https://spotify-readme-azure-one.vercel.app/api/now-playing" alt="Spotify Now Playing" />
+  <img src="https://spotify-readme-azure-one.vercel.app/api" alt="Spotify Now Playing" />
 </p>
 
 ## 🚀 About Me
@@ -38,8 +38,8 @@ CSS         [░░░░░░░░░░]  1.2%
 ## 🐍 Contribution Animation
 <div align="center">
   <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="[https://raw.githubusercontent.com/KiritoYG/KiritoYG/output/github-contribution-grid-snake-dark.svg](https://raw.githubusercontent.com/KiritoYG/KiritoYG/output/github-contribution-grid-snake-dark.svg)">
-    <source media="(prefers-color-scheme: light)" srcset="[https://raw.githubusercontent.com/KiritoYG/KiritoYG/output/github-contribution-grid-snake.svg](https://raw.githubusercontent.com/KiritoYG/KiritoYG/output/github-contribution-grid-snake.svg)">
-    <img alt="github contribution grid snake animation" src="[https://raw.githubusercontent.com/KiritoYG/KiritoYG/output/github-contribution-grid-snake.svg](https://raw.githubusercontent.com/KiritoYG/KiritoYG/output/github-contribution-grid-snake.svg)">
+    <source media="(prefers-color-scheme: dark)" srcset="[https://raw.githubusercontent.com/KiritoYG/KiritoYG/output/github-contribution-grid-snake-dark.svg?v=1](https://raw.githubusercontent.com/KiritoYG/KiritoYG/output/github-contribution-grid-snake-dark.svg?v=1)">
+    <source media="(prefers-color-scheme: light)" srcset="[https://raw.githubusercontent.com/KiritoYG/KiritoYG/output/github-contribution-grid-snake.svg?v=1](https://raw.githubusercontent.com/KiritoYG/KiritoYG/output/github-contribution-grid-snake.svg?v=1)">
+    <img alt="github contribution grid snake animation" src="[https://raw.githubusercontent.com/KiritoYG/KiritoYG/output/github-contribution-grid-snake.svg?v=1](https://raw.githubusercontent.com/KiritoYG/KiritoYG/output/github-contribution-grid-snake.svg?v=1)">
   </picture>
 </div>
