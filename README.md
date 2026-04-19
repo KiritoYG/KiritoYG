@@ -10,7 +10,9 @@
 ## 🤖 Yui's Terminal
 ```text
 $ cat /var/log/yui_insight.log
+---YUI_START---
 > [SYS_INIT] System core is online. Awaiting data stream...
+---YUI_END---
 ```
 
 ## 🚀 About Me
