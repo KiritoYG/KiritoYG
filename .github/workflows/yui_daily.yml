@@ -1,0 +1,38 @@
+name: Yui Daily Insight
+
+on:
+  schedule:
+    # 每天 UTC 时间 00:00 (北京时间早上 8:00) 自动触发
+    - cron: '0 0 * * *'
+  workflow_dispatch: # 允许你手动点击运行测试
+
+jobs:
+  update-yui:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write # 必须赋予写入权限
+    
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/checkout@v4
+        with:
+          python-version: '3.10'
+
+      - name: Install dependencies
+        run: pip install requests
+
+      - name: Run Yui Brain
+        env:
+          DEEPSEEK_API_KEY: ${{ secrets.DEEPSEEK_API_KEY }}
+        run: python yui_brain.py
+
+      - name: Commit and Push
+        run: |
+          git config --global user.name "github-actions[bot]"
+          git config --global user.email "github-actions[bot]@users.noreply.github.com"
+          git add README.md
+          git commit -m "chore: Yui's daily log update" || echo "No changes to commit"
+          git push
