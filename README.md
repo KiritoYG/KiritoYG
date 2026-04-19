@@ -19,15 +19,6 @@
   </a>
 </p>
 
-### 💻 Skill Proficiency
-```bash
-$ kirito --fetch-skills
-
-JavaScript  [█████████░] 88.7%
-Python      [█░░░░░░░░░]  5.8%
-HTML        [░░░░░░░░░░]  4.3%
-CSS         [░░░░░░░░░░]  1.2%
-```
 
 ## 📊 GitHub Stats
 <div align="center">
