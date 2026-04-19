@@ -8,10 +8,11 @@
 - ⚡ Focus: AGI, LLM, 自动化脚本
 
 ## 🛠️ Tech Stack
-![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)
-![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)
-![Windows](https://img.shields.io/badge/Windows_11-0078d4?style=for-the-badge&logo=windows-11&logoColor=white)
-![Visual Studio](https://img.shields.io/badge/Visual_Studio-5C2D91?style=for-the-badge&logo=visual-studio&logoColor=white)
+<p align="left">
+  <a href="https://skillicons.dev">
+    <img src="https://skillicons.dev/icons?i=js,py,windows,visualstudio,github,bash&theme=dark&perline=6" alt="My Skills" />
+  </a>
+</p>
 
 ### 💻 Skill Proficiency
 ```bash
