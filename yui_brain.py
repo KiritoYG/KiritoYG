@@ -34,7 +34,7 @@ def update_readme(new_content):
     with open("README.md", "r", encoding="utf-8") as f:
         content = f.read()
 
-    # 【终极修复】使用纯文本破折号作为坐标，绝对不会被系统吞噬！
+    # 修复
     pattern = r"(---YUI_START---).*?(---YUI_END---)"
     replacement = f"\\1\n{new_content}\n\\2"
     
