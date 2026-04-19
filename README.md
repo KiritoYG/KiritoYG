@@ -2,6 +2,11 @@
   <img src="https://readme-typing-svg.herokuapp.com/?font=JetBrains+Mono&size=30&duration=3000&pause=1000&color=00E5FF&center=true&vCenter=true&width=800&lines=👋+Hi+there!+I'm+KiritoYG;⚡+Orchestrating+Local+LLMs+%26+AI+Agents;🐍+Python+|+JS+|+Windows+11;🚀+Exploring+AGI+%26+Automation" alt="Typing SVG" />
 </h1>
 
+## 🎧 Now Playing
+<p align="left">
+  <img src="https://spotify-readme-azure-one.vercel.app/api/now-playing" alt="Spotify Now Playing" />
+</p>
+
 ## 🚀 About Me
 - 🔭 Currently working on: 本地大模型部署与 AI Agent 架构重构
 - 🌱 Learning: Python 进阶与底层框架探索
