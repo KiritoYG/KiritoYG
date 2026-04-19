@@ -1,16 +1,21 @@
-## Hi there 👋
+# Hi there, I'm KiritoYG 👋
 
-<!--
-**KiritoYG/KiritoYG** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
+## 🚀 About Me
+- 🔭 Currently working on: 本地大模型部署与 AI Agent 架构重构
+- 🌱 Learning: Python 进阶与底层框架探索
+- ⚡ Focus: AGI, LLM, 自动化脚本
 
-Here are some ideas to get you started:
+## 🛠️ Tech Stack
+![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)
+![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)
+![Windows](https://img.shields.io/badge/Windows_11-0078d4?style=for-the-badge&logo=windows-11&logoColor=white)
+![Visual Studio](https://img.shields.io/badge/Visual_Studio-5C2D91?style=for-the-badge&logo=visual-studio&logoColor=white)
 
-- 🔭 I’m currently working on ...
-- 🌱 I’m currently learning ...
-- 👯 I’m looking to collaborate on ...
-- 🤔 I’m looking for help with ...
-- 💬 Ask me about ...
-- 📫 How to reach me: ...
-- 😄 Pronouns: ...
-- ⚡ Fun fact: ...
--->
+### 💻 Skill Proficiency
+```bash
+$ kirito --fetch-skills
+
+JavaScript  [█████████░] 88.7%
+Python      [█░░░░░░░░░]  5.8%
+HTML        [░░░░░░░░░░]  4.3%
+CSS         [░░░░░░░░░░]  1.2%
