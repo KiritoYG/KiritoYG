@@ -1,4 +1,4 @@
-# <h1 align="center">
+<h1 align="center">
   <img src="https://readme-typing-svg.herokuapp.com/?font=JetBrains+Mono&size=30&duration=3000&pause=1000&color=00E5FF&center=true&vCenter=true&width=800&lines=👋+Hi+there!+I'm+KiritoYG;⚡+Orchestrating+Local+LLMs+&+AI+Agents;🐍+Python+|+JS+|+Windows+11;🚀+Exploring+AGI+&+Automation" alt="Typing SVG" />
 </h1>
 
