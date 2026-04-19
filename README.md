@@ -11,7 +11,7 @@
 ```text
 $ cat /var/log/yui_insight.log
 ---YUI_START---
-> [SYS_INIT] System core is online. Awaiting data stream...
+今天也要像优化Agent架构一样，温柔地梳理生活的每一个线程呢。
 ---YUI_END---
 ```
 
