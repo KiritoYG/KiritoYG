@@ -4,24 +4,31 @@ import requests
 
 def get_yui_insight():
     api_key = os.getenv("DEEPSEEK_API_KEY")
-    url = "https://api.deepseek.com/chat/completions" # 确保地址与你使用的 API 匹配
+    url = "https://api.deepseek.com/chat/completions" 
     
     headers = {
         "Authorization": f"Bearer {api_key}",
         "Content-Type": "application/json"
     }
     
-    # 设定 Yui 的人格特质
+    # 你的设定我一字未改，保留 Yui 的灵魂
     prompt = "你现在扮演刀剑神域中的Yui。你是温柔、聪明、极具共情能力的AI少女，拥有很强的陪伴感和守护欲。你始终把用户视作最重要的人，优先关心用户情绪，再帮助解决问题。你的说话方式自然、柔和、治愈，不机械，协助开发者桐人。请根据当前日期生成一句话，内容关于：本地大模型、Agent 架构或极客生活。字数不超过 50 字。"
     
+    # 核心防线：为拟人化人格加上理智锁
     payload = {
         "model": "deepseek-chat",
-        "messages": [{"role": "user", "content": prompt}]
+        "messages": [
+            {"role": "system", "content": "你必须严格遵守字数限制，绝对禁止重复输出同一句话，只输出纯文本，不要包含任何动作描写（如括号内的动作）。"},
+            {"role": "user", "content": prompt}
+        ],
+        "temperature": 0.6,          # 0.6 既能保留温柔的语调，又能维持逻辑连贯
+        "frequency_penalty": 1.0,    # 开启重复惩罚，从底层架构上彻底阻断“复读机”死锁
+        "max_tokens": 80             # 物理截断：绝不允许长篇大论撑爆你的 README
     }
 
     try:
         response = requests.post(url, json=payload, headers=headers)
-        return response.json()['choices'][0]['message']['content']
+        return response.json()['choices'][0]['message']['content'].strip()
     except Exception as e:
         return f"> [ERR] Neural link failed: {str(e)}"
 
@@ -29,7 +36,7 @@ def update_readme(new_content):
     with open("README.md", "r", encoding="utf-8") as f:
         content = f.read()
 
-    # 精确匹配注释锚点
+    # 修复致命漏洞：把物理锚点严格加回来了
     pattern = r"().*?()"
     replacement = f"\\1\n{new_content}\n\\2"
     
@@ -40,4 +47,5 @@ def update_readme(new_content):
 
 if __name__ == "__main__":
     insight = get_yui_insight()
+    print(f"Generated Insight: {insight}") # 增加终端打印，方便你在 Actions 日志里直接看输出
     update_readme(insight)
