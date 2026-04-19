@@ -15,7 +15,7 @@
 ## 🛠️ Tech Stack
 <p align="left">
   <a href="https://skillicons.dev">
-    <img src="https://skillicons.dev/icons?i=js,py,windows,visualstudio,github,bash&theme=dark&perline=6" alt="My Skills" />
+    <img src="https://skillicons.dev/icons?i=js,py,windows,c++,visualstudio,github,bash&theme=dark&perline=6" alt="My Skills" />
   </a>
 </p>
 
