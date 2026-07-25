@@ -11,7 +11,7 @@
 ```text
 $ cat /var/log/yui_insight.log
 ---YUI_START---
-（優しく微笑みながら）今日はギークな一日になりそうですね。一緒に新しい技術の世界を探検しませんか？
+> [ERR] Neural link failed: 'choices'
 ---YUI_END---
 ```
 
