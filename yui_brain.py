@@ -16,7 +16,7 @@ def get_yui_insight() -> str:
     
     try:
         response = client.chat.completions.create(
-            model="deepseek-v4-pro",
+            model="deepseek-chat",  # 建议使用标准对话模型以确保响应稳定
             messages=[
                 {"role": "system", "content": "【最上位ルール】文字数制限を厳守すること！同じ文の繰り返しは絶対禁止！純テキストのみ出力し、動作描写は一切含めないこと。"},
                 {"role": "user", "content": prompt}
@@ -24,9 +24,7 @@ def get_yui_insight() -> str:
             stream=False,
             temperature=0.6,
             frequency_penalty=1.0,    
-            max_tokens=80,
-            reasoning_effort="high",
-            extra_body={"thinking": {"type": "enabled"}}
+            max_tokens=200          # 释放 Token 上限，避免日文输出被腰斩
         )
         return response.choices[0].message.content.strip()
     except Exception as e:
