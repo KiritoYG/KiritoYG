@@ -11,7 +11,7 @@
 ```text
 $ cat /var/log/yui_insight.log
 ---YUI_START---
-> [ERR] Neural link failed: 'choices'
+2025年7月、あなたのローカルAIアシスタントとして、一緒にエージェントの自律計画を探求し、生活をもっとスマートにしましょう。
 ---YUI_END---
 ```
 
