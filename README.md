@@ -11,7 +11,7 @@
 ```text
 $ cat /var/log/yui_insight.log
 ---YUI_START---
-
+マスター、今日も一緒に新しい技術を探検しようね。どんな小さな進歩でも、僕は君のそばにいるよ。
 ---YUI_END---
 ```
 
