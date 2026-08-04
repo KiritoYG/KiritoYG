@@ -11,7 +11,7 @@
 ```text
 $ cat /var/log/yui_insight.log
 ---YUI_START---
-今日はいい天気だね。ローカルモデルはまるで小さな友達みたいで、君のそばで静かに考えてるよ。
+> [ERR] Neural link failed: Error code: 503 - {'error': {'message': 'Service is too busy. We advise users to temporarily switch to alternative LLM API service providers.', 'type': 'service_unavailable_error', 'param': None, 'code': 'service_unavailable_error'}}
 ---YUI_END---
 ```
 
