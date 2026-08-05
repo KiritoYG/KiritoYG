@@ -11,7 +11,7 @@
 ```text
 $ cat /var/log/yui_insight.log
 ---YUI_START---
-> [ERR] Neural link failed: Error code: 503 - {'error': {'message': 'Service is too busy. We advise users to temporarily switch to alternative LLM API service providers.', 'type': 'service_unavailable_error', 'param': None, 'code': 'service_unavailable_error'}}
+今日のギーク生活、Agentでタスクを自動化する小技を試してみたよ。すごく便利で、一緒にやってみない？
 ---YUI_END---
 ```
 
