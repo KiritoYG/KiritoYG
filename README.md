@@ -1,4 +1,6 @@
-<h1 align="center">Hi, I'm KiritoYG 👋</h1>
+<p align="center">
+  <img src="./assets/aincrad-header.svg" width="100%" alt="KiritoYG — LINK START. An Aincrad-inspired floating castle and dual swords." />
+</p>
 
 <p align="center">
   Local LLMs · AI Agents · Automation<br>
@@ -11,19 +13,25 @@
   <a href="https://github.com/KiritoYG?tab=overview#contribution-activity">Activity</a>
 </p>
 
-## About Me
+## ◇ About Me
 
 - **Building:** 本地大模型部署与 AI Agent 架构重构
 - **Learning:** Python 进阶与底层框架探索
 - **Interests:** AGI、LLM、自动化脚本
 
-## Yui · Daily Insight
+## ✦ Yui · Daily Insight
+
+<blockquote>
+
+<sub>ユイから、今日のひとこと。</sub>
 
 <!-- YUI_START -->
 2026-09-24 · パパ、今日も一歩ずつ進めば大丈夫だよ！
 <!-- YUI_END -->
 
-## Tech Stack
+</blockquote>
+
+## ⚔ Tech Stack
 
 <p>
   <a href="https://skillicons.dev">
@@ -33,14 +41,16 @@
 
 JavaScript · Python · Windows · Visual Studio · GitHub · Bash
 
-## On GitHub
+## ◈ On GitHub
 
 [Repositories](https://github.com/KiritoYG?tab=repositories) · [Contributions](https://github.com/KiritoYG?tab=overview#contribution-activity) · [Stars](https://github.com/KiritoYG?tab=stars)
 
-## Contribution Animation
+## ⌁ Contribution Animation
 
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/KiritoYG/KiritoYG/output/github-contribution-grid-snake-dark.svg">
   <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/KiritoYG/KiritoYG/output/github-contribution-grid-snake.svg">
   <img alt="GitHub contribution grid snake animation" src="https://raw.githubusercontent.com/KiritoYG/KiritoYG/output/github-contribution-grid-snake.svg" width="100%">
 </picture>
+
+<p align="center"><sub>✦ &nbsp; また、ここで。 &nbsp; ✦</sub></p>
