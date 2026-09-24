@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="840" height="22" viewBox="0 0 840 22" role="img" aria-labelledby="divider-title">
+  <title id="divider-title">A blue and gold interface divider with a gently moving point of light</title>
+  <defs>
+    <linearGradient id="line-left" x1="0" y1="0" x2="1" y2="0"><stop stop-color="#79bad4" stop-opacity="0"/><stop offset="0.25" stop-color="#79bad4" stop-opacity="0.42"/><stop offset="1" stop-color="#79bad4" stop-opacity="0.65"/></linearGradient>
+    <linearGradient id="line-right" x1="0" y1="0" x2="1" y2="0"><stop stop-color="#79bad4" stop-opacity="0.65"/><stop offset="0.75" stop-color="#79bad4" stop-opacity="0.42"/><stop offset="1" stop-color="#79bad4" stop-opacity="0"/></linearGradient>
+    <radialGradient id="point-glow"><stop stop-color="#c4f4ff" stop-opacity="0.65"/><stop offset="1" stop-color="#8cdaf2" stop-opacity="0"/></radialGradient>
+  </defs>
+  <style>
+    #traveler { animation: drift 8s linear infinite; transform:translateX(200px); opacity:0.55; }
+    @keyframes drift { 0% { transform:translateX(20px);opacity:0; } 12%,88% { opacity:0.72; } 100% { transform:translateX(820px);opacity:0; } }
+    @media (prefers-reduced-motion: reduce) { #traveler { animation:none; transform:translateX(200px);opacity:0.45; } }
+  </style>
+  <path d="M20 11H402" stroke="url(#line-left)"/>
+  <path d="M438 11H820" stroke="url(#line-right)"/>
+  <path d="M420 5L426 11L420 17L414 11Z" fill="none" stroke="#87bdcf" stroke-opacity="0.55"/>
+  <path d="M420 8L423 11L420 14L417 11Z" fill="#d4b985"/>
+  <circle cx="405" cy="11" r="1" fill="#87bdcf" opacity="0.65"/>
+  <circle cx="435" cy="11" r="1" fill="#87bdcf" opacity="0.65"/>
+  <g id="traveler"><ellipse cy="11" rx="8" ry="2.1" fill="url(#point-glow)"/><circle cy="11" r="1.2" fill="#c9f5ff"/></g>
+</svg>
