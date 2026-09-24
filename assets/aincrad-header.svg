@@ -1,0 +1,123 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="360" viewBox="0 0 1200 360" role="img" aria-labelledby="title description">
+  <title id="title">KiritoYG — Link Start</title>
+  <desc id="description">An original Sword Art Online inspired profile banner: cyan interface lines over a midnight background, with a terraced floating castle and hanging rock on the right.</desc>
+  <defs>
+    <linearGradient id="night" x1="0" y1="0" x2="1" y2="1">
+      <stop stop-color="#07131f"/>
+      <stop offset="0.53" stop-color="#08121d"/>
+      <stop offset="1" stop-color="#0c2130"/>
+    </linearGradient>
+    <radialGradient id="horizon" cx="0.8" cy="0.48" r="0.52">
+      <stop stop-color="#1c6680" stop-opacity="0.24"/>
+      <stop offset="0.65" stop-color="#143a50" stop-opacity="0.06"/>
+      <stop offset="1" stop-color="#08121d" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="stone" x1="0" y1="0" x2="1" y2="0.3">
+      <stop stop-color="#18313f"/>
+      <stop offset="0.4" stop-color="#355564"/>
+      <stop offset="0.72" stop-color="#234350"/>
+      <stop offset="1" stop-color="#112934"/>
+    </linearGradient>
+    <linearGradient id="terrace" x1="0" y1="0" x2="0" y2="1">
+      <stop stop-color="#62828a"/>
+      <stop offset="0.38" stop-color="#365968"/>
+      <stop offset="1" stop-color="#152f3f"/>
+    </linearGradient>
+    <linearGradient id="rock" x1="0.1" y1="0" x2="0.7" y2="1">
+      <stop stop-color="#29434e"/>
+      <stop offset="0.45" stop-color="#172d3c"/>
+      <stop offset="1" stop-color="#081522"/>
+    </linearGradient>
+    <linearGradient id="rule" x1="0" y1="0" x2="1" y2="0">
+      <stop stop-color="#65d8eb" stop-opacity="0.7"/>
+      <stop offset="1" stop-color="#65d8eb" stop-opacity="0"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="1200" height="360" rx="14" fill="url(#night)"/>
+  <rect width="1200" height="360" rx="14" fill="url(#horizon)"/>
+
+  <!-- Quiet interface frame, deliberately open at the corners. -->
+  <path d="M47 23H1139L1177 61V309L1149 337H61L23 299V51Z" fill="none" stroke="#65c6de" stroke-opacity="0.17"/>
+  <path d="M23 88V51L47 23H127 M1073 23H1139L1177 61V94 M1177 272V309L1149 337H1073 M126 337H61L23 299V270" fill="none" stroke="#68cfe3" stroke-width="2" stroke-opacity="0.72"/>
+  <path d="M148 23H190 M1013 337H1054" stroke="#d4b57b" stroke-width="2" stroke-opacity="0.75"/>
+  <path d="M690 72V94 M690 267V288 M679 83H701 M679 277H701" stroke="#6eaabb" stroke-opacity="0.22"/>
+  <path d="M722 58H1088 M727 304H1112" stroke="#3a7188" stroke-opacity="0.15"/>
+
+  <!-- Sparse lights keep the silhouette separate from the background. -->
+  <g fill="#9ccbd6">
+    <circle cx="756" cy="79" r="1.2" opacity="0.6"/>
+    <circle cx="1107" cy="87" r="1.1" opacity="0.55"/>
+    <circle cx="824" cy="51" r="0.8" opacity="0.5"/>
+    <circle cx="1139" cy="165" r="0.9" opacity="0.42"/>
+    <circle cx="774" cy="285" r="0.8" opacity="0.35"/>
+    <circle cx="1067" cy="306" r="1.1" opacity="0.4"/>
+  </g>
+  <path d="M1084 119V127 M1080 123H1088" stroke="#d4b57b" stroke-opacity="0.7"/>
+
+  <!-- Profile typography remains useful when the banner is scaled down. -->
+  <g font-family="Arial, Helvetica, sans-serif">
+    <path d="M68 99H88L95 106L88 113H68" fill="none" stroke="#d4b57b" stroke-width="1.7"/>
+    <text x="111" y="114" fill="#91ddea" font-family="'Courier New', monospace" font-size="23" letter-spacing="4">LINK START</text>
+    <text x="65" y="197" fill="#f0f7fa" font-size="78" font-weight="700" letter-spacing="-2">Kirito<tspan fill="#8bdded">YG</tspan></text>
+    <path d="M69 220H605" stroke="url(#rule)"/>
+    <text x="68" y="259" fill="#b1c4d0" font-size="21" letter-spacing="0.9">LOCAL LLMs · AI AGENTS · AUTOMATION</text>
+  </g>
+
+  <!-- A restrained dual-blade emblem between the name and the floating world. -->
+  <g transform="translate(697 178)" stroke-linejoin="round" opacity="0.76">
+    <g transform="rotate(-36)">
+      <path d="M0 -67L7 -47L5 22H-5L-7 -47Z" fill="#111e2b" stroke="#a0bac8" stroke-width="1.5"/>
+      <path d="M0 -55V20" stroke="#637d91"/>
+      <path d="M-17 24L-13 19L0 22L13 19L17 24L5 27H-5Z" fill="#233442" stroke="#9ab3c1"/>
+      <path d="M-3 28V49H3V28M-6 50H6L4 56H-4Z" fill="#152535" stroke="#849dac"/>
+    </g>
+    <g transform="rotate(36)">
+      <path d="M0 -67L7 -47L5 22H-5L-7 -47Z" fill="#1e4555" stroke="#87d8e5" stroke-width="1.5"/>
+      <path d="M0 -55V20" stroke="#b2edf1" stroke-opacity="0.65"/>
+      <path d="M-17 24L-13 19L0 22L13 19L17 24L5 27H-5Z" fill="#285769" stroke="#87d8e5"/>
+      <path d="M-3 28V49H3V28M-6 50H6L4 56H-4Z" fill="#1a3a4c" stroke="#83cbd9"/>
+    </g>
+  </g>
+
+  <!-- Original terraced floating fortress, inspired by Aincrad's silhouette. -->
+  <g stroke-linejoin="round">
+    <!-- Hanging bedrock and a few lit facets. -->
+    <path d="M792 249L826 281L857 278L884 303L913 300L935 326L957 309L982 317L1006 292L1030 299L1055 274L1083 278L1129 248Z" fill="url(#rock)" stroke="#416070" stroke-opacity="0.38"/>
+    <path d="M826 258L857 278L864 264L893 275L913 300L902 263L935 279L935 326L950 294L957 264L982 278L1006 292L998 263L1030 278L1055 274L1080 256" fill="none" stroke="#65808b" stroke-opacity="0.22"/>
+    <path d="M864 264L884 303L893 275 M982 278L982 317L957 309 M1030 278L1030 299" fill="none" stroke="#071521" stroke-width="2" stroke-opacity="0.65"/>
+
+    <!-- Each storey widens toward the lower terrace. -->
+    <path d="M789 232Q961 205 1133 232V248Q961 278 789 248Z" fill="url(#stone)" stroke="#476776" stroke-opacity="0.75"/>
+    <ellipse cx="961" cy="231" rx="174" ry="23" fill="url(#terrace)" stroke="#7da1ab" stroke-opacity="0.65"/>
+    <path d="M809 213Q961 190 1113 213V231Q961 255 809 231Z" fill="url(#stone)" stroke="#476776" stroke-opacity="0.75"/>
+    <ellipse cx="961" cy="212" rx="154" ry="20" fill="url(#terrace)" stroke="#7da1ab" stroke-opacity="0.65"/>
+    <path d="M830 194Q961 174 1092 194V213Q961 234 830 213Z" fill="url(#stone)" stroke="#476776" stroke-opacity="0.75"/>
+    <ellipse cx="961" cy="193" rx="133" ry="18" fill="url(#terrace)" stroke="#7da1ab" stroke-opacity="0.65"/>
+    <path d="M850 175Q961 158 1072 175V194Q961 212 850 194Z" fill="url(#stone)" stroke="#476776" stroke-opacity="0.75"/>
+    <ellipse cx="961" cy="174" rx="113" ry="16" fill="url(#terrace)" stroke="#7da1ab" stroke-opacity="0.65"/>
+    <path d="M871 156Q961 141 1051 156V175Q961 191 871 175Z" fill="url(#stone)" stroke="#476776" stroke-opacity="0.75"/>
+    <ellipse cx="961" cy="155" rx="92" ry="14" fill="url(#terrace)" stroke="#7da1ab" stroke-opacity="0.65"/>
+    <path d="M891 137Q961 126 1031 137V156Q961 169 891 156Z" fill="url(#stone)" stroke="#476776" stroke-opacity="0.75"/>
+    <ellipse cx="961" cy="136" rx="72" ry="12" fill="url(#terrace)" stroke="#7da1ab" stroke-opacity="0.65"/>
+    <path d="M911 119Q961 110 1011 119V137Q961 148 911 137Z" fill="url(#stone)" stroke="#476776" stroke-opacity="0.75"/>
+    <ellipse cx="961" cy="118" rx="52" ry="10" fill="url(#terrace)" stroke="#7da1ab" stroke-opacity="0.65"/>
+
+    <!-- Summit keep: a central spire and two smaller watchtowers. -->
+    <path d="M930 117V94H926L934 73L942 94H938V102H947V79H943L954 52L964 79H960V90H967V84H963L973 61L983 84H979V104H987V95H983L991 77L999 95H995V117Q963 127 930 117Z" fill="url(#stone)" stroke="#829fac" stroke-width="1"/>
+    <path d="M954 53L958 77 M973 63L977 82 M934 75L937 93 M991 79L994 94" stroke="#b3cbd0" stroke-opacity="0.55"/>
+    <path d="M950 106V116 M969 100V115 M986 108V118" stroke="#d4b57b" stroke-width="2" stroke-opacity="0.72"/>
+
+    <!-- Lit windows follow the front walls without overpowering the silhouette. -->
+    <g stroke="#b6d2d5" stroke-width="2" stroke-opacity="0.52">
+      <path d="M932 132V136 M950 135V139 M972 135V139 M990 132V136"/>
+      <path d="M915 151V155 M938 157V161 M963 159V163 M988 157V161 M1010 152V156"/>
+      <path d="M895 171V175 M920 177V181 M947 181V185 M976 181V185 M1005 177V181 M1030 171V175"/>
+      <path d="M875 191V195 M901 197V201 M930 202V206 M961 204V208 M992 202V206 M1021 197V201 M1047 191V195"/>
+      <path d="M853 211V215 M882 218V222 M913 223V227 M945 226V230 M978 226V230 M1010 223V227 M1040 218V222 M1069 211V215"/>
+      <path d="M829 230V234 M861 238V242 M894 245V249 M927 248V252 M962 250V254 M997 248V252 M1030 244V248 M1063 238V242 M1094 231V235"/>
+    </g>
+    <path d="M794 249Q961 278 1128 249" fill="none" stroke="#82c3d0" stroke-width="1.5" stroke-opacity="0.6"/>
+    <path d="M899 260Q960 269 1021 260" fill="none" stroke="#d4b57b" stroke-opacity="0.58"/>
+  </g>
+</svg>
