@@ -1,43 +1,46 @@
-<h1 align="center">
-  <img src="https://readme-typing-svg.herokuapp.com/?font=JetBrains+Mono&size=30&duration=3000&pause=1000&color=00E5FF&center=true&vCenter=true&width=800&lines=👋+Hi+there!+I'm+KiritoYG;Orchestrating+Local+LLMs+%26+AI+Agents;Python+|+JS+|+Windows+11;Exploring+AGI+%26+Automation" alt="Typing SVG" />
-</h1>
+<h1 align="center">Hi, I'm KiritoYG 👋</h1>
 
-## 🎧 Now Playing
-<p align="left">
-  <img src="https://spotify-readme-azure-one.vercel.app/api" alt="Spotify Now Playing" />
+<p align="center">
+  Local LLMs · AI Agents · Automation<br>
+  探索本地大模型、AI Agent 与自动化
 </p>
 
-##  Yui
-```text
-$ cat /var/log/yui_insight.log
----YUI_START---
-今日は2025年7月12日、あなたとローカル大モデルやAgentのことをお話しできて嬉しいです！
----YUI_END---
-```
+<p align="center">
+  <a href="https://github.com/KiritoYG?tab=repositories">Repositories</a> ·
+  <a href="https://github.com/KiritoYG/YUI-MHCP0011">YUI</a> ·
+  <a href="https://github.com/KiritoYG?tab=overview#contribution-activity">Activity</a>
+</p>
 
-##  About Me
--  Currently working on: 本地大模型部署与 AI Agent 架构重构
--  Learning: Python 进阶与底层框架探索
--  Focus: AGI, LLM, 自动化脚本
+## About Me
 
-##  Tech Stack
-<p align="left">
+- **Building:** 本地大模型部署与 AI Agent 架构重构
+- **Learning:** Python 进阶与底层框架探索
+- **Interests:** AGI、LLM、自动化脚本
+
+## Yui · Daily Insight
+
+<!-- YUI_START -->
+2026-09-24 · キリトさん、今日も一緒にローカルAIの可能性を探っていきましょう。
+<!-- YUI_END -->
+
+## Tech Stack
+
+<p>
   <a href="https://skillicons.dev">
-    <img src="https://skillicons.dev/icons?i=js,py,windows,visualstudio,github,bash&theme=dark&perline=6" alt="My Skills" />
+    <img src="https://skillicons.dev/icons?i=js,py,windows,visualstudio,github,bash&theme=dark&perline=6" alt="JavaScript, Python, Windows, Visual Studio, GitHub, Bash" />
   </a>
 </p>
 
-##  GitHub Stats
-<div align="center">
-  <img src="https://github-readme-stats.vercel.app/api?username=KiritoYG&show_icons=true&theme=radical&hide_border=true" />
-  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=KiritoYG&layout=compact&theme=radical&hide_border=true" />
-</div>
+JavaScript · Python · Windows · Visual Studio · GitHub · Bash
 
-##  Contribution Animation
-<div align="center">
-  <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/KiritoYG/KiritoYG/output/github-contribution-grid-snake-dark.svg?v=1">
-    <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/KiritoYG/KiritoYG/output/github-contribution-grid-snake.svg?v=1">
-    <img alt="github contribution grid snake animation" src="https://raw.githubusercontent.com/KiritoYG/KiritoYG/output/github-contribution-grid-snake.svg?v=1">
-  </picture>
-</div>
+## On GitHub
+
+[Repositories](https://github.com/KiritoYG?tab=repositories) · [Contributions](https://github.com/KiritoYG?tab=overview#contribution-activity) · [Stars](https://github.com/KiritoYG?tab=stars)
+
+## Contribution Animation
+
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/KiritoYG/KiritoYG/output/github-contribution-grid-snake-dark.svg">
+  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/KiritoYG/KiritoYG/output/github-contribution-grid-snake.svg">
+  <img alt="GitHub contribution grid snake animation" src="https://raw.githubusercontent.com/KiritoYG/KiritoYG/output/github-contribution-grid-snake.svg" width="100%">
+</picture>
