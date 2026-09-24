@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="840" height="52" viewBox="0 0 840 52" role="img" aria-labelledby="panel-title panel-description">
+  <title id="panel-title">ACTIVITY / Contribution Log</title>
+  <desc id="panel-description">Contribution activity section heading.</desc>
+  
+  <defs></defs>
+  <rect x="0.5" y="0.5" width="839" height="51" rx="5" fill="#0d1b2b" stroke="#7abbd2" stroke-opacity="0.19"/>
+    <path d="M27 22L31 26L27 30L23 26Z" fill="#d2b789"/>
+    <text x="46" y="33" fill="#7abbd2" font-family="Arial, 'Microsoft YaHei', 'PingFang SC', 'Noto Sans CJK SC', sans-serif" font-size="20" letter-spacing="1.4">ACTIVITY</text>
+    <text x="167" y="33" fill="#b0c9d8" font-family="Arial, 'Microsoft YaHei', 'PingFang SC', 'Noto Sans CJK SC', sans-serif" font-size="20"><tspan fill="#7abbd2" opacity="0.6">/ </tspan>Contribution Log</text>
+    <path d="M424 26H816" stroke="#7abbd2" stroke-opacity="0.25"/>
+</svg>

@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="440" height="300" viewBox="0 0 440 300" role="img" aria-labelledby="panel-title panel-description">
+  <title id="panel-title">PLAYER INFO / About Me</title>
+  <desc id="panel-description">Building: 本地大模型部署与 AI Agent 架构重构。Learning: Python 进阶与底层框架探索。Interests: AGI、LLM、自动化脚本。</desc>
+  
+  <defs></defs>
+  <rect x="0.5" y="0.5" width="439" height="299" rx="7" fill="#0d1b2b" stroke="#7abbd2" stroke-opacity="0.22"/>
+  <path d="M17 0.5H47 M393 299.5H423" stroke="#7abbd2" stroke-opacity="0.45"/><path d="M27 21L31 25L27 29L23 25Z" fill="#d2b789"/>
+  <text x="46" y="32" fill="#7abbd2" font-family="Arial, 'Microsoft YaHei', 'PingFang SC', 'Noto Sans CJK SC', sans-serif" font-size="20" letter-spacing="1.4">PLAYER INFO</text>
+  <text x="213" y="32" fill="#b0c9d8" font-family="Arial, 'Microsoft YaHei', 'PingFang SC', 'Noto Sans CJK SC', sans-serif" font-size="20"><tspan fill="#7abbd2" opacity="0.6">/ </tspan>About Me</text>
+  <path d="M22 49.5H418" stroke="#7abbd2" stroke-opacity="0.15"/><text x="25" y="78" fill="#7abbd2" font-family="Arial, 'Microsoft YaHei', 'PingFang SC', 'Noto Sans CJK SC', sans-serif" font-size="22">Building</text><text x="25" y="110" fill="#e6f0f5" font-family="Arial, 'Microsoft YaHei', 'PingFang SC', 'Noto Sans CJK SC', sans-serif" font-size="25">本地大模型部署与 AI Agent</text><text x="25" y="140" fill="#e6f0f5" font-family="Arial, 'Microsoft YaHei', 'PingFang SC', 'Noto Sans CJK SC', sans-serif" font-size="25">架构重构</text><path d="M25 155H415" stroke="#7abbd2" stroke-opacity="0.1"/><text x="25" y="182" fill="#7abbd2" font-family="Arial, 'Microsoft YaHei', 'PingFang SC', 'Noto Sans CJK SC', sans-serif" font-size="22">Learning</text><text x="25" y="215" fill="#e6f0f5" font-family="Arial, 'Microsoft YaHei', 'PingFang SC', 'Noto Sans CJK SC', sans-serif" font-size="24">Python 进阶与底层框架探索</text><path d="M25 232H415" stroke="#7abbd2" stroke-opacity="0.1"/><text x="25" y="259" fill="#7abbd2" font-family="Arial, 'Microsoft YaHei', 'PingFang SC', 'Noto Sans CJK SC', sans-serif" font-size="22">Interests</text><text x="25" y="287" fill="#e6f0f5" font-family="Arial, 'Microsoft YaHei', 'PingFang SC', 'Noto Sans CJK SC', sans-serif" font-size="24">AGI、LLM、自动化脚本</text>
+</svg>

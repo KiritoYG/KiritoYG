@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="840" height="20" viewBox="0 0 840 20" role="img" aria-labelledby="panel-title panel-description">
+  <title id="panel-title">Interface divider</title>
+  <desc id="panel-description">Fine blue lines and a gold diamond, with a subtle eight-second light movement that becomes still when reduced motion is preferred.</desc>
+  
+  <defs><linearGradient id="left-line"><stop stop-color="#7abbd2" stop-opacity="0"/><stop offset="1" stop-color="#7abbd2" stop-opacity="0.38"/></linearGradient>
+    <linearGradient id="right-line"><stop stop-color="#7abbd2" stop-opacity="0.38"/><stop offset="1" stop-color="#7abbd2" stop-opacity="0"/></linearGradient>
+    <radialGradient id="light"><stop stop-color="#c4edf6" stop-opacity="0.4"/><stop offset="1" stop-color="#7abbd2" stop-opacity="0"/></radialGradient></defs>
+  <style>
+    #traveler {animation:drift 8s linear infinite;transform:translateX(180px);opacity:0.45;}
+    @keyframes drift {0%{transform:translateX(24px);opacity:0;}12%,88%{opacity:0.6;}100%{transform:translateX(816px);opacity:0;}}
+    @media (prefers-reduced-motion:reduce) {#traveler{animation:none;transform:translateX(180px);opacity:0.4;}}
+  </style>
+  <path d="M24 10H405" stroke="url(#left-line)" stroke-width="0.8"/>
+  <path d="M435 10H816" stroke="url(#right-line)" stroke-width="0.8"/>
+  <path d="M420 6L424 10L420 14L416 10Z" fill="#d2b789" opacity="0.8"/>
+  <g id="traveler"><ellipse cy="10" rx="6" ry="1.7" fill="url(#light)"/><circle cy="10" r="0.85" fill="#bee7f2"/></g>
+</svg>
