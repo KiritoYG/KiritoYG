@@ -7,6 +7,8 @@ import tempfile
 from datetime import datetime, timedelta, timezone
 from pathlib import Path
 
+from yui_card import CardError, render_yui_cards, write_files_safely
+
 JST = timezone(timedelta(hours=9))
 START = "<!-- YUI_START -->"
 END = "<!-- YUI_END -->"
@@ -105,15 +107,29 @@ def update_readme(insight, today, readme_path=README_PATH):
     return True
 
 
+def update_profile(insight, today, readme_path=README_PATH):
+    """Validate and render a complete update before touching published files."""
+    path = Path(readme_path)
+    original = path.read_bytes()
+    # Keep update_readme's independent API intact and stage its result locally.
+    with tempfile.TemporaryDirectory(dir=path.parent) as directory:
+        draft = Path(directory) / "README.md"
+        draft.write_bytes(original)
+        update_readme(insight, today, draft)
+        updated = draft.read_bytes()
+        cards = render_yui_cards(updated, path.parent / "assets")
+    return write_files_safely({path: updated, **cards})
+
+
 def main():
     try:
         today = jst_date()
-        changed = update_readme(get_yui_insight(today), today)
+        changed = update_profile(get_yui_insight(today), today)
     except UpdateError as error:
         print(str(error), file=sys.stderr)
         return 1
-    except (OSError, UnicodeError):
-        print("README could not be updated safely.", file=sys.stderr)
+    except (CardError, OSError, UnicodeError):
+        print("Yui note and cards could not be updated safely.", file=sys.stderr)
         return 1
     print("Yui note updated." if changed else "Yui note is unchanged.")
     return 0
