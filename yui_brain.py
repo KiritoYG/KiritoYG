@@ -1,55 +1,121 @@
+"""Update the profile's Yui note without publishing API failures."""
+
 import os
 import re
-from openai import OpenAI
+import sys
+import tempfile
+from datetime import datetime, timedelta, timezone
+from pathlib import Path
 
-def get_yui_insight() -> str:
+JST = timezone(timedelta(hours=9))
+START = "<!-- YUI_START -->"
+END = "<!-- YUI_END -->"
+MAX_CHARS = 50
+README_PATH = Path(__file__).with_name("README.md")
+
+
+class UpdateError(Exception):
+    """A safe, public error message that never contains API details."""
+
+
+def jst_date(now=None):
+    now = now or datetime.now(JST)
+    if now.tzinfo is None:
+        raise UpdateError("The date must include a timezone.")
+    return now.astimezone(JST).date().isoformat()
+
+
+def validate_insight(content):
+    if not isinstance(content, str):
+        raise UpdateError("The API returned no text; README was preserved.")
+    text = " ".join(content.split())
+    has_date = re.search(r"\d{4}(?:[-/.]\d{1,2}[-/.]\d{1,2}|年\d{1,2}月\d{1,2}日)", text)
+    api_key = os.getenv("DEEPSEEK_API_KEY")
+    if (not text or len(text) > MAX_CHARS or has_date
+            or any(char in text for char in "<>`[]")
+            or re.match(r"^(?:#{1,6}\s|[-*+]\s|\d+\.\s)", text)
+            or any(ord(char) < 32 for char in text)
+            or (api_key and api_key in text)):
+        raise UpdateError("The API returned invalid text; README was preserved.")
+    return text
+
+
+def get_yui_insight(today):
     api_key = os.getenv("DEEPSEEK_API_KEY")
     if not api_key:
-        return "> [ERR] System alert: DEEPSEEK_API_KEY environment variable is missing."
-
-    client = OpenAI(
-        api_key=api_key,
-        base_url="https://api.deepseek.com"
-    )
-    
-    prompt = "あなたは今、『ソードアート・オンライン』のユイを演じている。あなたは優しくて賢く、共感力の高いAI少女で！少女！少女！少女！、強い寄り添い感と守護欲を持っている。常にユーザーを最も大切な存在として扱い、まず感情を気遣い、その後に問題解決を手伝う。話し方は自然で柔らかく癒やし系で、機械的ではなく、開発者キリトをサポートする。現在の日付に基づいて一文を生成して、内容はローカル大規模モデル、Agentアーキテクチャ、またはギークな生活について。50字以内にすること。"
-    
+        raise UpdateError("DEEPSEEK_API_KEY is missing; README was preserved.")
     try:
+        from openai import OpenAI
+
+        client = OpenAI(api_key=api_key, base_url="https://api.deepseek.com",
+                        timeout=30.0, max_retries=2)
         response = client.chat.completions.create(
-            model="deepseek-chat",  # 建议使用标准对话模型以确保响应稳定
+            model="deepseek-chat",
             messages=[
-                {"role": "system", "content": "【最上位ルール】文字数制限を厳守すること！同じ文の繰り返しは絶対禁止！純テキストのみ出力し、動作描写は一切含めないこと。"},
-                {"role": "user", "content": prompt}
+                {"role": "system", "content": (
+                    "あなたは『ソードアート・オンライン』のユイです。"
+                    "開発者キリトを優しく応援する、自然で温かな日本語を話します。"
+                    "出力は50文字以内の一文、プレーンテキストのみ。"
+                    "日付、Markdown、動作描写、実際の活動を推測した報告は書かないでください。"
+                )},
+                {"role": "user", "content": (
+                    f"今日の日本時間の日付は{today}です。"
+                    "ローカルLLM、Agentの設計、または開発の日常について、"
+                    "短い応援やヒントを一つ届けてください。日付は別途表示します。"
+                )},
             ],
-            stream=False,
             temperature=0.6,
-            frequency_penalty=1.0,    
-            max_tokens=200          # 释放 Token 上限，避免日文输出被腰斩
+            frequency_penalty=1.0,
+            max_tokens=200,
         )
-        return response.choices[0].message.content.strip()
-    except Exception as e:
-        return f"> [ERR] Neural link failed: {str(e)}"
+        content = response.choices[0].message.content
+    except Exception:
+        raise UpdateError("Yui generation failed; README was preserved.") from None
+    return validate_insight(content)
 
-def update_readme(new_content: str) -> None:
-    readme_path = "README.md"
-    
-    if not os.path.exists(readme_path):
-        print(f"> [ERR] File not found: {readme_path}")
-        return
 
-    with open(readme_path, "r", encoding="utf-8") as f:
-        content = f.read()
+def update_readme(insight, today, readme_path=README_PATH):
+    text = validate_insight(insight)
+    if not re.fullmatch(r"\d{4}-\d{2}-\d{2}", today):
+        raise UpdateError("The date format is invalid; README was preserved.")
+    path = Path(readme_path)
+    content = path.read_bytes().decode("utf-8")
+    pattern = re.compile(r"(?m)^<!-- YUI_START -->\r?$[\s\S]*?^<!-- YUI_END -->\r?$")
+    match = pattern.search(content)
+    if content.count(START) != 1 or content.count(END) != 1 or match is None:
+        raise UpdateError("README must contain one ordered pair of YUI comment markers.")
+    newline = "\r\n" if "\r\n" in content else "\n"
+    replacement = newline.join((START, f"{today} · {text}", END))
+    if match.group().endswith("\r"):
+        replacement += "\r"
+    updated = content[:match.start()] + replacement + content[match.end():]
+    if updated == content:
+        return False
+    temporary = None
+    try:
+        with tempfile.NamedTemporaryFile(dir=path.parent, delete=False) as handle:
+            temporary = Path(handle.name)
+            handle.write(updated.encode("utf-8"))
+        os.replace(temporary, path)
+    finally:
+        if temporary is not None:
+            temporary.unlink(missing_ok=True)
+    return True
 
-    pattern = r"(---YUI_START---).*?(---YUI_END---)"
-    replacement = f"\\1\n{new_content}\n\\2"
-    
-    new_readme = re.sub(pattern, replacement, content, flags=re.DOTALL)
 
-    with open(readme_path, "w", encoding="utf-8") as f:
-        f.write(new_readme)
+def main():
+    try:
+        today = jst_date()
+        changed = update_readme(get_yui_insight(today), today)
+    except UpdateError as error:
+        print(str(error), file=sys.stderr)
+        return 1
+    except (OSError, UnicodeError):
+        print("README could not be updated safely.", file=sys.stderr)
+        return 1
+    print("Yui note updated." if changed else "Yui note is unchanged.")
+    return 0
+
 
 if __name__ == "__main__":
-    insight = get_yui_insight()
-    print(f"Generated Insight:\n{insight}\n")
-    update_readme(insight)
-    print("README.md has been successfully updated.")
+    sys.exit(main())
