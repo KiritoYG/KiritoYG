@@ -50,7 +50,8 @@ def get_yui_insight(today):
         client = OpenAI(api_key=api_key, base_url="https://api.deepseek.com",
                         timeout=30.0, max_retries=2)
         response = client.chat.completions.create(
-            model="deepseek-chat",
+            model="deepseek-flash",
+            extra_body={"thinking": {"type": "disabled"}},
             messages=[
                 {"role": "system", "content": (
                     "あなたは『ソードアート・オンライン』のユイです。"
@@ -65,13 +66,14 @@ def get_yui_insight(today):
                 )},
             ],
             temperature=0.6,
-            frequency_penalty=1.0,
             max_tokens=200,
         )
-        content = response.choices[0].message.content
+        choice = response.choices[0]
     except Exception:
         raise UpdateError("Yui generation failed; README was preserved.") from None
-    return validate_insight(content)
+    if choice.finish_reason != "stop":
+        raise UpdateError("Yui response was incomplete; README was preserved.")
+    return validate_insight(choice.message.content)
 
 
 def update_readme(insight, today, readme_path=README_PATH):
