@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="./assets/aincrad-header.svg" width="100%" alt="KiritoYG — LINK START. An Aincrad-inspired floating castle and dual swords." />
+  <img src="./assets/sao-profile-animated.gif" width="100%" alt="KiritoYG — Kirito and Yui in Aincrad, with gently drifting light fragments." />
 </p>
 
 <p align="center">
