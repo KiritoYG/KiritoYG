@@ -19,27 +19,36 @@
 - **Learning:** Python 进阶与底层框架探索
 - **Interests:** AGI、LLM、自动化脚本
 
+<p align="center"><img src="./assets/sao-divider.svg" width="100%" alt="" /></p>
+
 ## ✦ Yui · Daily Insight
 
-<blockquote>
-
-<sub>ユイから、今日のひとこと。</sub>
-
+<table>
+<tr>
+<td width="112" align="center" valign="middle">
+<img src="./assets/yui-dialogue-portrait.png" width="96" height="96" alt="Yui smiling" /><br>
+<sub>YUI · ユイ</sub>
+</td>
+<td width="728" valign="middle">
+<strong>ユイから、今日のひとこと。</strong><br><br>
 <!-- YUI_START -->
 2026-09-24 · パパ、今日も一歩ずつ進めば大丈夫だよ！
 <!-- YUI_END -->
+</td>
+</tr>
+</table>
 
-</blockquote>
+<p align="center"><img src="./assets/sao-divider.svg" width="100%" alt="" /></p>
 
 ## ⚔ Tech Stack
 
-<p>
-  <a href="https://skillicons.dev">
-    <img src="https://skillicons.dev/icons?i=js,py,windows,visualstudio,github,bash&theme=dark&perline=6" alt="JavaScript, Python, Windows, Visual Studio, GitHub, Bash" />
-  </a>
+<p align="center">
+  <img src="./assets/sao-skill-slots.svg" width="100%" alt="SAO-inspired skill slots: Python, JavaScript, Bash, Windows, Visual Studio, and GitHub." />
 </p>
 
 JavaScript · Python · Windows · Visual Studio · GitHub · Bash
+
+<p align="center"><img src="./assets/sao-divider.svg" width="100%" alt="" /></p>
 
 ## ◈ On GitHub
 
