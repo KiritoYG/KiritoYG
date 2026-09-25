@@ -1,6 +1,7 @@
 """Update the profile's Yui note without publishing API failures."""
 
 import os
+import hashlib
 import re
 import sys
 import tempfile
@@ -134,6 +135,19 @@ def update_readme(insight, today, readme_path=README_PATH):
     return True
 
 
+def version_card_urls(content):
+    """Give each published note fresh image URLs instead of cached prior cards."""
+    day, note = parse_note(content)
+    version = hashlib.sha256((day + "\n" + note).encode("utf-8")).hexdigest()[:16]
+    base = "https://raw.githubusercontent.com/KiritoYG/KiritoYG/main/assets/"
+    pattern = re.compile(
+        r'''((?:src|srcset)=["'])(?:\./assets/|https://raw\.githubusercontent\.com/KiritoYG/KiritoYG/main/assets/)'''
+        r'''(yui-dialogue(?:-mobile)?\.svg)(?:\?v=[a-f0-9]+)?(?=["'])'''
+    )
+    text = content.decode("utf-8")
+    return pattern.sub(lambda m: m[1] + base + m[2] + "?v=" + version, text).encode("utf-8")
+
+
 def update_profile(insight, today, readme_path=README_PATH):
     """Validate and render a complete update before touching published files."""
     path = Path(readme_path)
@@ -143,7 +157,7 @@ def update_profile(insight, today, readme_path=README_PATH):
         draft = Path(directory) / "README.md"
         draft.write_bytes(original)
         update_readme(insight, today, draft)
-        updated = draft.read_bytes()
+        updated = version_card_urls(draft.read_bytes())
         cards = render_yui_cards(updated, path.parent / "assets")
     return write_files_safely({path: updated, **cards})
 
