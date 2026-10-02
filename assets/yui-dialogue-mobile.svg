@@ -1,5 +1,5 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="440" height="320" viewBox="0 0 440 320" role="img" aria-labelledby="title description">
-  <title id="title">Yui · 2026-10-01 · エージェント設計は目的を一つに絞ると強くなるよ。</title>
+  <title id="title">Yui · 2026-10-02 · ローカルLLMは小さく試して比べるのが上達の近道だよ。</title>
   <desc id="description">Yui's daily message. Her portrait briefly blinks once every eight seconds. Reduced motion shows the still portrait.</desc>
   <defs>
     <clipPath id="avatar-clip"><circle cx="70" cy="90" r="48" /></clipPath>
@@ -27,8 +27,8 @@
   <text x="140" y="92" fill="#87afbf" font-size="10" letter-spacing="1.3">DAILY INSIGHT</text>
   <rect x="20" y="157" width="400" height="141" rx="15" fill="#13283c" stroke="#284b60" />
   <text id="message" fill="#ecf5fa" font-size="22" font-weight="400" xml:space="preserve">
-    <tspan x="40" y="189">エージェント設計は目的を一つに絞</tspan>
-    <tspan x="40" y="216">ると強くなるよ。</tspan>
+    <tspan x="40" y="189">ローカルLLMは小さく試して比べ</tspan>
+    <tspan x="40" y="216">るのが上達の近道だよ。</tspan>
   </text>
-  <text id="date" x="140" y="119" fill="#9db7c5" font-size="12">2026-10-01 · JST</text>
+  <text id="date" x="140" y="119" fill="#9db7c5" font-size="12">2026-10-02 · JST</text>
 </svg>
