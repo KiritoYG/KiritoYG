@@ -1,5 +1,5 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="440" height="320" viewBox="0 0 440 320" role="img" aria-labelledby="title description">
-  <title id="title">Yui · 2026-10-06 · キリトさん、小さな成功を記録に残すと、迷ったときの道しるべになるよ。</title>
+  <title id="title">Yui · 2026-10-07 · キリトさん、エージェントの動きは小さな一歩から。焦らず進もうね。</title>
   <desc id="description">Yui's daily message. Her portrait briefly blinks once every eight seconds. Reduced motion shows the still portrait.</desc>
   <defs>
     <clipPath id="avatar-clip"><circle cx="70" cy="90" r="48" /></clipPath>
@@ -27,9 +27,8 @@
   <text x="140" y="92" fill="#87afbf" font-size="10" letter-spacing="1.3">DAILY INSIGHT</text>
   <rect x="20" y="157" width="400" height="141" rx="15" fill="#13283c" stroke="#284b60" />
   <text id="message" fill="#ecf5fa" font-size="22" font-weight="400" xml:space="preserve">
-    <tspan x="40" y="189">キリトさん、小さな成功を記録に残</tspan>
-    <tspan x="40" y="216">すと、迷ったときの道しるべになる</tspan>
-    <tspan x="40" y="243">よ。</tspan>
+    <tspan x="40" y="189">キリトさん、エージェントの動きは</tspan>
+    <tspan x="40" y="216">小さな一歩から。焦らず進もうね。</tspan>
   </text>
-  <text id="date" x="140" y="119" fill="#9db7c5" font-size="12">2026-10-06 · JST</text>
+  <text id="date" x="140" y="119" fill="#9db7c5" font-size="12">2026-10-07 · JST</text>
 </svg>
