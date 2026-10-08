@@ -30,8 +30,8 @@
 
 <p align="center">
   <picture>
-    <source media="(max-width: 600px)" srcset="https://raw.githubusercontent.com/KiritoYG/KiritoYG/main/assets/yui-dialogue-mobile.svg?v=62e81d10d66e2ff5">
-    <img src="https://raw.githubusercontent.com/KiritoYG/KiritoYG/main/assets/yui-dialogue.svg?v=62e81d10d66e2ff5" width="100%" alt="Yui · Daily Insight — a daily message from Yui. A text version is available below." />
+    <source media="(max-width: 600px)" srcset="https://raw.githubusercontent.com/KiritoYG/KiritoYG/main/assets/yui-dialogue-mobile.svg?v=7a2b43cf3a4c0a95">
+    <img src="https://raw.githubusercontent.com/KiritoYG/KiritoYG/main/assets/yui-dialogue.svg?v=7a2b43cf3a4c0a95" width="100%" alt="Yui · Daily Insight — a daily message from Yui. A text version is available below." />
   </picture>
 </p>
 
@@ -82,7 +82,7 @@
 
 <p>
 <!-- YUI_START -->
-2026-10-07 · キリトさん、エージェントの動きは小さな一歩から。焦らず進もうね。
+2026-10-08 · キリトさん、今日も一歩ずつ。ログを読むその目が、きっと未来を照らすよ。
 <!-- YUI_END -->
 </p>
 
