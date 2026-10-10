@@ -30,8 +30,8 @@
 
 <p align="center">
   <picture>
-    <source media="(max-width: 600px)" srcset="https://raw.githubusercontent.com/KiritoYG/KiritoYG/main/assets/yui-dialogue-mobile.svg?v=45255584d5dad341">
-    <img src="https://raw.githubusercontent.com/KiritoYG/KiritoYG/main/assets/yui-dialogue.svg?v=45255584d5dad341" width="100%" alt="Yui · Daily Insight — a daily message from Yui. A text version is available below." />
+    <source media="(max-width: 600px)" srcset="https://raw.githubusercontent.com/KiritoYG/KiritoYG/main/assets/yui-dialogue-mobile.svg?v=51983a7ac3ae8a10">
+    <img src="https://raw.githubusercontent.com/KiritoYG/KiritoYG/main/assets/yui-dialogue.svg?v=51983a7ac3ae8a10" width="100%" alt="Yui · Daily Insight — a daily message from Yui. A text version is available below." />
   </picture>
 </p>
 
@@ -82,7 +82,7 @@
 
 <p>
 <!-- YUI_START -->
-2026-10-09 · キリトさん、エージェントの動きを確かめる時は、小さな成功を一緒に喜ぼうね。
+2026-10-10 · キリトさん、ローカルLLMは少しずつ育てるのが一番だよ。
 <!-- YUI_END -->
 </p>
 
