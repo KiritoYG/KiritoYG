@@ -30,8 +30,8 @@
 
 <p align="center">
   <picture>
-    <source media="(max-width: 600px)" srcset="https://raw.githubusercontent.com/KiritoYG/KiritoYG/main/assets/yui-dialogue-mobile.svg?v=4015d76b98bcaa37">
-    <img src="https://raw.githubusercontent.com/KiritoYG/KiritoYG/main/assets/yui-dialogue.svg?v=4015d76b98bcaa37" width="100%" alt="Yui · Daily Insight — a daily message from Yui. A text version is available below." />
+    <source media="(max-width: 600px)" srcset="https://raw.githubusercontent.com/KiritoYG/KiritoYG/main/assets/yui-dialogue-mobile.svg?v=615799808912ab5a">
+    <img src="https://raw.githubusercontent.com/KiritoYG/KiritoYG/main/assets/yui-dialogue.svg?v=615799808912ab5a" width="100%" alt="Yui · Daily Insight — a daily message from Yui. A text version is available below." />
   </picture>
 </p>
 
@@ -82,7 +82,7 @@
 
 <p>
 <!-- YUI_START -->
-2026-10-13 · キリトさん、エージェントの記憶設計は小さく試すのが近道だよ。
+2026-10-14 · キリトさん、ローカルLLMは小さく動かしてから育てると安心だよ。
 <!-- YUI_END -->
 </p>
 
