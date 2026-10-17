@@ -30,8 +30,8 @@
 
 <p align="center">
   <picture>
-    <source media="(max-width: 600px)" srcset="https://raw.githubusercontent.com/KiritoYG/KiritoYG/main/assets/yui-dialogue-mobile.svg?v=cdf0b623e094444d">
-    <img src="https://raw.githubusercontent.com/KiritoYG/KiritoYG/main/assets/yui-dialogue.svg?v=cdf0b623e094444d" width="100%" alt="Yui · Daily Insight — a daily message from Yui. A text version is available below." />
+    <source media="(max-width: 600px)" srcset="https://raw.githubusercontent.com/KiritoYG/KiritoYG/main/assets/yui-dialogue-mobile.svg?v=df4af2fe59735519">
+    <img src="https://raw.githubusercontent.com/KiritoYG/KiritoYG/main/assets/yui-dialogue.svg?v=df4af2fe59735519" width="100%" alt="Yui · Daily Insight — a daily message from Yui. A text version is available below." />
   </picture>
 </p>
 
@@ -82,7 +82,7 @@
 
 <p>
 <!-- YUI_START -->
-2026-10-16 · キリトさん、小さく試す勇気が大きな一歩になるよ。
+2026-10-17 · 設計は完璧より、まず動く喜びを大切にね。
 <!-- YUI_END -->
 </p>
 
